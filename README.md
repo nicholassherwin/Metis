@@ -24,10 +24,9 @@ Possible ways to address the problem:
 1. Determine the busiest stations within a set collection period.
 2. Determine time of day with highest traffic per station.
 3. Look at housing value data in zip codes near stations to determine high-income earners.
-4. Determine the presence of other tech companies in the areas near strations.
-5. Determine the demographic information for each station (focusing on those who will attend the gala and contribute to their cause).
-6. Benchmark promotional periods for other conventions.
-7. We need to convert the date into a standard date time object by day of the week. 
+4. Determine the presence of other tech companies / external investment in the areas near stations.
+5. Plot overlap of stations, high home values and presence of tech investment
+6. Determine value-added stations by time of day 
 
 
 ### *Working Steps:* 
@@ -49,22 +48,20 @@ As a start we should take the station/turnstile data and sum to get a daily tota
 From here, we should take these top stations in the dataset and look at day of the week in order to understand how weekday vs. weekend traffic affects their overall position in the dataset. 
 
 #### Step 3 Data Analysis and Visualization
-To do this we group daily entries and exits together and then sum the totoal traffic. We also break down this daily column into the hourly collection periods to understand how the traffic volume changes per day. Here we will need to first identify our top stations. 
+To do this we group daily entries and exits together and then sum the total traffic. We also break down this daily column into the hourly collection periods to understand how the traffic volume changes per day. Here we will need to first identify our top stations. 
 
 Once we have an idea of the most populous hours we should correlate this data with our external datasets. We have the stations by zip code as well the following:
 
-Prominent tech companies in the NYC area
-Zillow home values in NYC 
+- Prominent tech companies in the NYC area
+- Zillow home values in NYC 
 
 We will focus plotting on the overlap between tech, wealth, and stations.
 
 
 ### *Recommendations:*
 
-Based on the above chart, we can draw some conclusions about where to staff street marketing teams for this event.
 We recommend that WTWY staff street marketing team in the following:
 Between 4pm and 8pm at 23rd St (highest volume)
 Between 4pm and 8pm at Canal St (most affluent area)
 Between 4pm and 8pm at 28th (most tech investment/funded)
-Between the days, there is a highest volume of traffic on mondays but the difference isn't substantial so we will staff marketing teams across the
-However, the recommendation is not cut and dry and I would recommend doing some A/B testing with the marketing team to dial in placement across the collection period for both time and place.
+Between the days, there is a highest volume of traffic on mondays but the difference isn't substantial so we will staff marketing teams across the week. However, the recommendation is not cut and dry and I would recommend doing some A/B testing with the marketing team to dial in placement across the collection period for both time and place.
